@@ -1,3 +1,8 @@
+/**
+ * Keyboard Layout Manager
+ * @module layouts/keyboards
+ */
+
 const { Markup } = require("telegraf");
 
 exports.start = Markup.inlineKeyboard([

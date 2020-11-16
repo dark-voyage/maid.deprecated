@@ -1,3 +1,8 @@
+/**
+ * Message Template Layout Manager
+ * @module layouts/messages
+ */
+
 exports.start =
 	`<b>Welcome to BIS Groups 😏!</b>` +
 	`\n` +

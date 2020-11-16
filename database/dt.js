@@ -1,3 +1,10 @@
+/**
+ * Time offset calculator
+ * @name offset calc
+ * @description Uzbekistan's Time Offset finder
+ * @return {string}
+ */
+
 module.exports = async () => {
 	// create Date object for current location
 	const date = await new Date();

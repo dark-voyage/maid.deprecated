@@ -1,3 +1,8 @@
+/**
+ * Console Input Manager
+ * @module layouts/consoles
+ */
+
 const colors = require("colors");
 const path = require("path");
 
