@@ -7,7 +7,7 @@ const { composer, middleware, bot } = require("../../core/bot");
 const env = require("../../core/env");
 const consoles = require("../../layouts/consoles");
 const identifier = require("./identifier");
-const parser = require("../../timetable/parse");
+const parser = require("../../database/parse");
 
 (async () => {
 	const dir = await promises.readdir("./timetable");

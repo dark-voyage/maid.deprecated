@@ -6,13 +6,13 @@
  *
  */
 
-const bis1 = require("./4BIS1.json");
-const bis2 = require("./4BIS2.json");
-const bis3 = require("./4BIS3.json");
-const bis4 = require("./4BIS4.json");
-const bis5 = require("./4BIS5.json");
-const bis6 = require("./4BIS6.json");
-const bis7 = require("./4BIS7.json");
+const bis1 = require("../timetable/4BIS1.json");
+const bis2 = require("../timetable/4BIS2.json");
+const bis3 = require("../timetable/4BIS3.json");
+const bis4 = require("../timetable/4BIS4.json");
+const bis5 = require("../timetable/4BIS5.json");
+const bis6 = require("../timetable/4BIS6.json");
+const bis7 = require("../timetable/4BIS7.json");
 const groups = require("./group");
 
 module.exports = async (chat) => {

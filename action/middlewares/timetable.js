@@ -4,8 +4,8 @@ const { Markup } = require("telegraf");
 
 const date = require("../../database/dt");
 const consoles = require("../../layouts/consoles");
-const dataset = require("../../timetable");
-const group = require("../../timetable/group");
+const dataset = require("../../database");
+const group = require("../../database/group");
 
 composer.command(`timetable`, async (ctx) => {
 	if (ctx.chat.type === "group" || ctx.chat.type === "private") {
