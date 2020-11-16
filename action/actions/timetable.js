@@ -4,11 +4,11 @@ const { Markup } = require("telegraf");
 
 const date = require("../../database/dt");
 const consoles = require("../../layouts/consoles");
-const message = require("../../layouts/messages");
-const keyboard = require("../../layouts/keyboards");
-const database = require("../../database/db").timetable;
+const dataset = require("../../timetable");
+const group = require("../../timetable/group");
 
 composer.action(`timetable`, async (ctx) => {
+	const database = await dataset(ctx.chat.id);
 	const currentDay = (await date()).toString();
 	const tomorrowDay = ((await date()) + 1).toString();
 	const refreshTime = await new Date(
@@ -35,7 +35,9 @@ composer.action(`timetable`, async (ctx) => {
 	};
 
 	const timetable = async () => {
-		let text = `<b>⛓ Today's Timetable ⛓</b>`;
+		let text = `<b>⛓ Today's Timetable for 4BIS${await group(
+			ctx.chat.id
+		)} ⛓</b>`;
 
 		for (let subject of database[currentDay]) {
 			let subText =
