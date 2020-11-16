@@ -3,15 +3,17 @@ const { composer, middleware } = require("../../core/bot");
 const { Markup } = require("telegraf");
 
 const consoles = require("../../layouts/consoles");
-const message = require("../../layouts/messages");
-const keyboard = require("../../layouts/keyboards");
-const database = require("../../database/db").timetable;
+const dataset = require("../../database");
+const group = require("../../database/group");
 
 composer.action(/tomorrow_(.+)/gi, async (ctx) => {
 	const tomorrowDay = parseInt(ctx.match[1]);
+	const database = await dataset(ctx.chat.id);
 
 	const tomorrow = async () => {
-		let text = `<b>⛓ Timetable for Tomorrow ⛓</b>`;
+		let text = `<b>⛓ Timetable for Tomorrow for 4BIS${await group(
+			ctx.chat.id
+		)} ⛓</b>`;
 
 		for (let subject of database[tomorrowDay]) {
 			let subText =
@@ -34,11 +36,11 @@ composer.action(/tomorrow_(.+)/gi, async (ctx) => {
 				`<b>🎉 Feel free to enjoy today, you don't have any classes!</b>`;
 		}
 
-		const editLink = `https://github.com/4bis1/senpai/blob/master/database/json/timetable.json`;
+		const editLink = `https://github.com/wiut-bis/maid/tree/main/timetable`;
 		const editString =
 			`\n` +
 			`\n` +
-			`<b>⚠ If you found mistake, please take consider correcting</b> <a href="${editLink}">timetable.json</a> <b>in our repository!</b>`;
+			`<b>⚠ If you found mistake, please take consider correcting</b> <a href="${editLink}">timetable</a> <b>in our repository!</b>`;
 
 		text += editString;
 

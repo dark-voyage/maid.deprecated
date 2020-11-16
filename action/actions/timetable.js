@@ -1,4 +1,4 @@
-const { composer, middleware, markup } = require("../../core/bot");
+const { composer, middleware } = require("../../core/bot");
 
 const { Markup } = require("telegraf");
 
@@ -67,11 +67,11 @@ composer.action(`timetable`, async (ctx) => {
 				refreshTime + (await identifier(5))
 			}</code>`;
 
-		const editLink = `https://github.com/4bis1/senpai/blob/master/database/json/timetable.json`;
+		const editLink = `https://github.com/wiut-bis/maid/tree/main/timetable`;
 		const editString =
 			`\n` +
 			`\n` +
-			`<b>⚠ If you found mistake, please take consider correcting</b> <a href="${editLink}">timetable.json</a> <b>in our repository!</b>`;
+			`<b>⚠ If you found mistake, please take consider correcting</b> <a href="${editLink}">timetable</a> <b>in our repository!</b>`;
 
 		text += editTime;
 		text += editString;

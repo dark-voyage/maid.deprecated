@@ -4,7 +4,6 @@ const { join } = require("path");
 const { Markup } = require("telegraf");
 const { composer, middleware, bot } = require("../../core/bot");
 
-const env = require("../../core/env");
 const consoles = require("../../layouts/consoles");
 const identifier = require("./identifier");
 const parser = require("../../database/parse");
