@@ -5,12 +5,7 @@ exports.start = Markup.inlineKeyboard([
 ]);
 
 exports.help = Markup.inlineKeyboard([
-	[
-		Markup.urlButton(
-			"Announcement's Channel",
-			"https://t.me/joinchat/AAAAAFkWg9XgdWv0c4Qs8Q"
-		),
-	],
+	[Markup.urlButton("Announcement's Channel", "https://t.me/SeventyPlusBIS")],
 ]);
 
 exports.invalid = Markup.inlineKeyboard([
@@ -22,42 +17,30 @@ exports.error_admin = Markup.inlineKeyboard([
 ]);
 
 exports.links = async (links) => {
-	const keyboard = [];
-	for (let link of links) {
-		keyboard.push([Markup.urlButton(link["name"], link["url"])]);
-	}
-	return Markup.inlineKeyboard(keyboard);
+	return Markup.inlineKeyboard([
+		[
+			Markup.urlButton(
+				`Announcement Channel`,
+				`https://t.me/SeventyPlusBIS`
+			),
+		],
+		[
+			Markup.urlButton(`4BIS1`, `https://t.me/The4BIS1`),
+			Markup.urlButton(`4BIS2`, `https://t.me/The4BIS2`),
+		],
+		[
+			Markup.urlButton(`4BIS3`, `https://t.me/The4BIS3`),
+			Markup.urlButton(`4BIS4`, `https://t.me/The4BIS4`),
+		],
+		[
+			Markup.urlButton(`4BIS5`, `https://t.me/The4BIS5`),
+			Markup.urlButton(`4BIS6`, `https://t.me/The4BIS6`),
+		],
+		[Markup.urlButton(`4BIS7`, `https://t.me/The4BIS7`)],
+	]);
 };
 
 exports.contribute = Markup.inlineKeyboard([
-	[Markup.urlButton(`Contribute!`, `https://github.com/4bis1/senpai`)],
-	[Markup.urlButton(`Organisation`, `https://github.com/4bis1/`)],
-]);
-
-exports.chisel = Markup.inlineKeyboard([
-	[Markup.urlButton(`Web Technology`, `https://bis.chisel.uz/wt/`)],
-	[
-		Markup.urlButton(
-			`Computer Science Fundamentals`,
-			`https://bis.chisel.uz/csf/`
-		),
-	],
-	[
-		Markup.urlButton(
-			`Fundamentals of Programming`,
-			`https://bis.chisel.uz/fop/`
-		),
-	],
-	[
-		Markup.urlButton(
-			`Introduction to Statistics and Data Science`,
-			`https://bis.chisel.uz/isds/`
-		),
-	],
-	[
-		Markup.urlButton(
-			`Introduction to Management and Organisational Behavior`,
-			`https://bis.chisel.uz/imob/`
-		),
-	],
+	[Markup.urlButton(`Contribute!`, `https://github.com/wiut-bis/maid`)],
+	[Markup.urlButton(`Organisation`, `https://github.com/wiut-bis/`)],
 ]);

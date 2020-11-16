@@ -1,9 +1,9 @@
 exports.start =
-	`<b>💜 Welcome to ME 🤗!</b>` +
+	`<b>Welcome to BIS Groups 😏!</b>` +
 	`\n` +
 	`\n` +
-	`I'm just a virtual assistant created by my Father (@genemator) to help group 4BIS1 to give more information and I ` +
-	`can help guide you and give more information, notify about events and have a talk ╰(*°▽°*)╯.` +
+	`Hi Sugar!) I'm West Maid that helps you to keep tracking upcoming lessons, guides and gives you more information about BIS ╰(*°▽°*)╯.` +
+	`\n` +
 	`\n` +
 	`With my help, you can do:` +
 	`\n` +
@@ -17,7 +17,7 @@ exports.start =
 	`<code>* Leave a feedback to admins</code>` +
 	`\n` +
 	`\n` +
-	`Oni-chan, I hope we can get to know each other 😊` +
+	`Hey, I hope we can get to know each other 😄` +
 	`\n` +
 	`\n` +
 	`<i>In order to see full detailed usage information of the bot, press the button below.</i>`;
@@ -61,14 +61,12 @@ exports.help = (isAdmin) => {
 	}
 };
 
-exports.invalid = `<b>This command or message is invalid. Please see our command list for more information!</b>`;
+exports.invalid = `<b>Hey, I didn't get this command or message. Please see my command list for more information!</b>`;
 
 exports.error_admin = `<b>You don't have enough power to do that!</b>`;
 
 exports.invalid_query = `<b>Ehm!</b>`;
 
-exports.links = `<b>Here are 4BIS1's groups & channels:</b>`;
+exports.links = `<b>Here are BIS groups & channels:</b>`;
 
 exports.contribute = `<b>I'm so happy that you wanted to upgrade me 😁. Please, press the button below to get to my GitHub repo...</b>`;
-
-exports.chisel = `<b>Choose a module from provided list below to enter Chisel's LMS board:</b>`;
