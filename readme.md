@@ -21,8 +21,10 @@ you're ready to go!**
 
 This bot exists thankfully for those who contributed this project and they are:
 
--   [Genemator](https://github.com/genemators) _(Father)_ - The actual creator of the project and active contributor
--   [Khassanboi](https://github.com/khassanboi) _(Cousin)_ - Active contributor and the people who realise all feature
+-   [Genemator](https://github.com/genemators) _(Father)_ - The actual creator
+    of the project and active contributor
+-   [Khassanboi](https://github.com/khassanboi) _(Cousin)_ - Active contributor
+    and the people who realise all feature
 
 > Start contributing to become relative to maid!
 
@@ -36,10 +38,10 @@ This bot exists thankfully for those who contributed this project and they are:
 
 > **Important Note:** Under the CC0-1.0 license, you are not allowed to run your
 > own instance unless Genemator won't permit
-> [(this repository)](https://github.com/wiut-bis/maid). If you're modifying this
-> source and making your own bot, you have to ask for permission from creator
-> "Genemator" according to the CC0-1.0 license. Check [LICENSE](license) for
-> more info.
+> [(this repository)](https://github.com/wiut-bis/maid). If you're modifying
+> this source and making your own bot, you have to ask for permission from
+> creator "Genemator" according to the CC0-1.0 license. Check [LICENSE](license)
+> for more info.
 
 <p align="center">Copyright &copy; 2020 <a href="https://genemator.me" target="_blank">WIUT BIS => Genemator Sakhib</a></p>
 
