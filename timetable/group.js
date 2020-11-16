@@ -1,6 +1,13 @@
+/**
+ * Group Identifier
+ * @name group
+ * @description return group number from chat id
+ * @returns Number
+ */
+
 module.exports = async (chat) => {
 	switch (chat) {
-		case -1001475679372:
+		case 756870298: // -1001475679372
 			return 1;
 		case -1001228464622:
 			return 2;

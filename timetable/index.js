@@ -1,3 +1,11 @@
+/**
+ * Group Timetable Database Extractor
+ * @name time database
+ * @description extract timetable for a bis group
+ * @type {"0": *, "1": *, "2": *, "3": *, "4": *, "5": *, "6": *, "7": *}
+ *
+ */
+
 const bis1 = require("./4BIS1.json");
 const bis2 = require("./4BIS2.json");
 const bis3 = require("./4BIS3.json");
