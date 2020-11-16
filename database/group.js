@@ -7,7 +7,7 @@
 
 module.exports = async (chat) => {
 	switch (chat) {
-		case 756870298: // -1001475679372
+		case -1001475679372:
 			return 1;
 		case -1001228464622:
 			return 2;

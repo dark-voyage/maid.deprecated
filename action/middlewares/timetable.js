@@ -8,7 +8,7 @@ const dataset = require("../../database");
 const group = require("../../database/group");
 
 composer.command(`timetable`, async (ctx) => {
-	if (ctx.chat.type === "group" || ctx.chat.type === "private") {
+	if (ctx.chat.type === "group" || ctx.chat.type === "supergroup") {
 		const database = await dataset(ctx.chat.id);
 
 		const currentDay = (await date()).toString();
