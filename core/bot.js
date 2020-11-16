@@ -1,3 +1,10 @@
+/**
+ * Application Core Module
+ * @name core
+ * @description the main api wrapper point
+ * @return { bot, composer, middleware }
+ */
+
 const { Telegraf, Composer } = require("telegraf");
 
 const env = require("./env");

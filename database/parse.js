@@ -2,7 +2,8 @@
  * Group Parser
  * @name group parser
  * @description return chat id from group name
- * @returns number
+ * @param {string} name
+ * @returns Number
  */
 
 module.exports = async (name) => {

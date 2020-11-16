@@ -1,2 +1,8 @@
+/**
+ * Application Executor
+ * @name start point
+ * @description executing point of application
+ */
+
 require('../core')
 require('../action')

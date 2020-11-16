@@ -2,8 +2,8 @@
  * Group Timetable Database Extractor
  * @name time database
  * @description extract timetable for a bis group
- * @type {"0": *, "1": *, "2": *, "3": *, "4": *, "5": *, "6": *, "7": *}
- *
+ * @param {string} chat
+ * @returns {bis1 || bis2 || bis3 || bis4 || bis5 || bis6 || bis7}
  */
 
 const bis1 = require("../timetable/4BIS1.json");
