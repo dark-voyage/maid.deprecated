@@ -10,7 +10,7 @@ program.**
 | Version | Supported          |
 | ------- | ------------------ |
 | 15.x.x  | :white_check_mark: |
-| 14.x.x  | :white_check_mark: |
+| 14.x.x  | :warning:          |
 | 13.x.x  | :x:                |
 | =< 12.0 | :x:                |
 
