@@ -1,28 +1,37 @@
 const { composer, middleware } = require("../../core/bot");
 
 const consoles = require("../../layouts/consoles");
-const message = require("../../layouts/messages");
 const keyboard = require("../../layouts/keyboards");
-const groups = require("../../database/json/groups");
+const groups = require("../../database/json/groups.json");
+const security = require("../security");
 
 composer.hears(/\/tell (.*)/gi, async (ctx) => {
 	let input = ctx.match[1];
 
-	const text =
-		`<b>⚠ ATTENTION: ANNOUNCEMENT ⚠</b> \n` +
-		`\n` +
-		`<i>${input}</i> \n` +
-		`\n` +
-		`<b>Sincerely, admins of +70 (or genemator (☞ﾟヮﾟ)☞)</b> \n`;
+	await security(ctx, async () => {
+		const text =
+			`<b>⚠ ATTENTION: ANNOUNCEMENT ⚠</b> \n` +
+			`\n` +
+			`<i>${input}</i> \n` +
+			`\n` +
+			`<b>Sincerely, admins of +70 (or genemator (☞ﾟヮﾟ)☞)</b> \n`;
 
-	for (let group of groups) {
-		await ctx.telegram.sendMessage(group, text, {
-			parse_mode: "HTML",
-			reply_markup: keyboard.help,
-		});
-	}
-
-	await ctx.replyWithHTML(`<b>Your announcement has been sent!</b>`);
+		for (let group of groups) {
+			await ctx.telegram
+				.sendMessage(group, text, {
+					parse_mode: "HTML",
+					reply_markup: keyboard.help,
+				})
+				.then(async () => {
+					await ctx.replyWithHTML(
+						`<b>Your announcement has been successfully sent to ${group}!</b>`
+					);
+				})
+				.catch((error) => async () => {
+					await ctx.replyWithHTML(error);
+				});
+		}
+	});
 });
 
 composer.hears(/\/tell/, async (ctx) => {

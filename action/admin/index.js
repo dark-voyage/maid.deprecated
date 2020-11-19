@@ -1,5 +1,6 @@
 require("./add");
 require("./send");
 require("./list");
-require("./reset");
+require("./tell")
 require("./chat");
+require("./reset");

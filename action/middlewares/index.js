@@ -1,5 +1,4 @@
 require("./help");
-require("./tell");
 require("./init");
 require("./start");
 require("./links");
