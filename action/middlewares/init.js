@@ -9,7 +9,7 @@ composer.command(`init`, async (ctx) => {
 		`<b>Ohayōgozaimasu everyone!</b> \n` +
 		`Nice to see ya'll at the second semester of ` +
 		`Business Information System Course. I hope ya'll ` +
-		`finished first semester with good marks and wish ` +
+		`gonna finish first semester with good marks and wish ` +
 		`ya'll success and luck on upcoming 2nd semester cws! ` +
 		`From 2nd semester I'll be assisting and helping you ` +
 		`with your classes and I will be sending notifications to ` +
