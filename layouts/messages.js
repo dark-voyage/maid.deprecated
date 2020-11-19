@@ -56,6 +56,8 @@ exports.help = (isAdmin) => {
 		`\n` +
 		`/list - <code>list temporary admins</code>` +
 		`\n` +
+		`/tell - <code>send message to all groups</code>` +
+		`\n` +
 		`\n` +
 		`<i>Be careful! Restricted for non-admin users.` +
 		` Heavily checked and database tested zone</i>`;
