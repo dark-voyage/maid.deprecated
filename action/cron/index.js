@@ -49,13 +49,16 @@ const parser = require("../../database/parse");
 						]);
 
 						await bot.telegram
-							.sendMessage(groupTo, text, {
+							.sendMessage(await groupTo, text, {
 								parse_mode: "HTML",
 								reply_markup: keyboard,
 							})
 							.then(async (message) => {
 								await bot.telegram
-									.pinChatMessage(groupTo, message.message_id)
+									.pinChatMessage(
+										await groupTo,
+										message.message_id
+									)
 									.catch(null);
 							});
 					},

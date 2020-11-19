@@ -1,7 +1,8 @@
 require("./help");
+require("./init");
 require("./start");
 require("./links");
 require("./stats");
 require("./feedback");
-require("./contribute");
 require("./timetable");
+require("./contribute");

@@ -23,7 +23,7 @@ This bot exists thankfully for those who contributed this project and they are:
 
 -   [Genemator](https://github.com/genemators) _(Father)_ - The actual creator
     of the project and active contributor
--   [Khassanboi](https://github.com/khassanboi) _(Cousin)_ - Active contributor
+-   [Khassanboi](https://github.com/khassanboi) _(Uncle)_ - Active contributor
     and the people who realise all feature
 
 > Start contributing to become relative to maid!

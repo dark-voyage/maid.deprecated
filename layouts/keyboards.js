@@ -49,3 +49,8 @@ exports.contribute = Markup.inlineKeyboard([
 	[Markup.urlButton(`Contribute!`, `https://github.com/wiut-bis/maid`)],
 	[Markup.urlButton(`Organisation`, `https://github.com/wiut-bis/`)],
 ]);
+
+exports.init = Markup.inlineKeyboard([
+	[Markup.urlButton(`My father's website`, `https://genemator.me/`)],
+	[Markup.urlButton(`My cousin's website`, `http://khassanboi.uz/`)],
+]);
