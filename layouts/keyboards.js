@@ -51,6 +51,6 @@ exports.contribute = Markup.inlineKeyboard([
 ]);
 
 exports.init = Markup.inlineKeyboard([
-	[Markup.urlButton(`My father's website`, `https://genemator.me/`)],
+	[Markup.urlButton(`My father's website`, `https://genemator.uz/`)],
 	[Markup.urlButton(`My cousin's website`, `http://khassanboi.uz/`)],
 ]);
